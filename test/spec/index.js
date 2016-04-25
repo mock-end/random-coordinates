@@ -9,7 +9,7 @@ describe('random-coordinates: ', function () {
 
   it('common', function () {
 
-    var ret   = randomCoordinates(2);
+    var ret   = randomCoordinates({ fixed: 2 });
     var parts = ret.split(', ');
 
     expect(parts[0])

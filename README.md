@@ -21,8 +21,10 @@ $ npm install --save random-coordinates
 var randomCoordinates = require('random-coordinates');
 
 // API
-// - randomCoordinates();
-// - randomCoordinates(fixed);
+// - randomCoordinates([options]);
+
+// options
+// - fixed
 
 randomCoordinates();
 // => "-29.52974, 24.52815"
@@ -31,7 +33,7 @@ randomCoordinates();
 By default includes 5 fixed digits after decimal, can specify otherwise.
 
 ```js
-randomCoordinates(2)
+randomCoordinates({ fixed: 2 })
 // => "-49.16, 68.81"
 ```
 
